@@ -1,11 +1,76 @@
+:root{
+    --clr-letra-blanco: hsl(0, 10%, 94%);
+    --clr-fondo: hsl(0, 0%, 78%);
+    --clr-verde: hsl(145, 28%, 18%);
+}
+
 *{
     box-sizing: border-box;
 }
 
 body{
-    background: url('./leaves.jpg');
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, transparent 49.5%, var(--clr-fondo) 49.5%), url('./imgs/leaves.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;
     padding: 0;
+}
+
+header{
+    font-family: "Roboto Mono";
+    font-weight: 400;
+    color: var(--clr-letra-blanco);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+#social{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vw;
+}
+
+
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+}
+
+
+a{
+    color: var(--clr-verde);
+    font-family: "Roboto Mono";
+    font-weight: 600;
+    text-decoration: none;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: clamp(80px, 7rem + 1vw, 900px);
+    color: var(--clr-letra-blanco)
+}
+span{
+    background-clip: text;
+    background: url(./imgs/leaves.jpg);
+    color: transparent;
 }
