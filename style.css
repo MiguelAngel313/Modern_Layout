@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: url('./leaves.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 0;
+}
