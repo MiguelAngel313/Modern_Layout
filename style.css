@@ -11,9 +11,10 @@
 body{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to right, transparent 49.5%, var(--clr-fondo) 49.5%), url('./imgs/leaves.jpg');
+    background: linear-gradient(to right, transparent 50%, var(--clr-fondo) 50%), url('./imgs/leaves.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0 auto;
     padding: 0;
 }
@@ -27,7 +28,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    
 }
 
 #social{
@@ -57,7 +57,7 @@ a{
     text-decoration: none;
 }
 
-main{
+#nombre{
     width: 100%;
     height: 100%;
     display: flex;
@@ -65,12 +65,36 @@ main{
     align-items: center;
 }
 
-h1{
+#nombre h1{
     font-size: clamp(80px, 7rem + 1vw, 900px);
     color: var(--clr-letra-blanco)
 }
 span{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
-    background: url(./imgs/leaves.jpg);
+    background-image: url(./imgs/leaves.jpg);
     color: transparent;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#info{
+    text-align: right;
+    color: var(--clr-verde);
 }
